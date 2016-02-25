@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PromotionProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LEJ-bP-Ufz">
+                        <rect key="frame" x="10" y="22" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="cuf-2m-wJt"/>
+                            <constraint firstAttribute="width" constant="80" id="zsH-pO-dUo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正品杜蕾斯震环震动套延时水晶 套环男女用情趣性趣用品" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kq3-80-DOi">
+                        <rect key="frame" x="95" y="20" width="210" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="l1i-Qk-Ljf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥29999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWU-Ay-wjt">
+                        <rect key="frame" x="95" y="82" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MJm-2R-IRN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.53333333333333333" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNr-nW-ais">
+                        <rect key="frame" x="203" y="78" width="100" height="30"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_circle_button_background_grey" translatesAutoresizingMaskIntoConstraints="NO" id="vmn-IK-FPa">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数量100000件" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGa-Uj-7j1">
+                                <rect key="frame" x="0.0" y="5" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="UZ7-2z-PkC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wGa-Uj-7j1" secondAttribute="trailing" id="1Kp-Av-dua"/>
+                            <constraint firstAttribute="width" constant="100" id="4ZC-mx-PZb"/>
+                            <constraint firstItem="vmn-IK-FPa" firstAttribute="top" secondItem="mNr-nW-ais" secondAttribute="top" id="6Fb-jO-0rr"/>
+                            <constraint firstItem="wGa-Uj-7j1" firstAttribute="leading" secondItem="mNr-nW-ais" secondAttribute="leading" id="GaS-HL-gjh"/>
+                            <constraint firstAttribute="bottom" secondItem="vmn-IK-FPa" secondAttribute="bottom" id="IhU-SO-F9c"/>
+                            <constraint firstItem="vmn-IK-FPa" firstAttribute="leading" secondItem="mNr-nW-ais" secondAttribute="leading" id="TJK-Al-a2j"/>
+                            <constraint firstAttribute="height" constant="30" id="cG9-eD-gxF"/>
+                            <constraint firstAttribute="trailing" secondItem="vmn-IK-FPa" secondAttribute="trailing" id="n4q-gZ-Ute"/>
+                            <constraint firstAttribute="centerY" secondItem="wGa-Uj-7j1" secondAttribute="centerY" id="yTd-vS-fI6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mNr-nW-ais" firstAttribute="top" secondItem="kq3-80-DOi" secondAttribute="bottom" constant="16" id="IB1-zc-w4m"/>
+                    <constraint firstAttribute="trailing" secondItem="mNr-nW-ais" secondAttribute="trailing" constant="17" id="ROW-pX-8ES"/>
+                    <constraint firstItem="kq3-80-DOi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="VEL-Du-nY4"/>
+                    <constraint firstItem="eWU-Ay-wjt" firstAttribute="top" secondItem="kq3-80-DOi" secondAttribute="bottom" constant="20" id="aBY-ml-NVc"/>
+                    <constraint firstItem="LEJ-bP-Ufz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eny-4U-PzA"/>
+                    <constraint firstAttribute="centerY" secondItem="LEJ-bP-Ufz" secondAttribute="centerY" id="fub-Y6-mHD"/>
+                    <constraint firstItem="mNr-nW-ais" firstAttribute="leading" secondItem="eWU-Ay-wjt" secondAttribute="trailing" constant="8" id="g18-pQ-6kn"/>
+                    <constraint firstItem="kq3-80-DOi" firstAttribute="leading" secondItem="LEJ-bP-Ufz" secondAttribute="trailing" constant="5" id="huQ-Se-ftD"/>
+                    <constraint firstAttribute="trailing" secondItem="kq3-80-DOi" secondAttribute="trailing" constant="15" id="imt-ul-w6w"/>
+                    <constraint firstItem="eWU-Ay-wjt" firstAttribute="leading" secondItem="LEJ-bP-Ufz" secondAttribute="trailing" constant="5" id="z6m-CW-BaC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gAmountLabel" destination="wGa-Uj-7j1" id="q4F-n3-3Ig"/>
+                <outlet property="gNameLabel" destination="kq3-80-DOi" id="ceh-KV-CYU"/>
+                <outlet property="gPicImageView" destination="LEJ-bP-Ufz" id="ru1-Hj-exI"/>
+                <outlet property="gPriceLabel" destination="eWU-Ay-wjt" id="vtD-RC-sMp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_circle_button_background_grey" width="179" height="57"/>
+    </resources>
+</document>

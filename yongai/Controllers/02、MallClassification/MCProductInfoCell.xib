@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="MCProductInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_dotted_line" translatesAutoresizingMaskIntoConstraints="NO" id="vCv-ZC-0mv">
+                        <rect key="frame" x="10" y="39" width="300" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rhC-Rg-wct"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品信息:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-RD-cwl">
+                        <rect key="frame" x="10" y="10" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="74d-dA-bID"/>
+                            <constraint firstAttribute="width" constant="71" id="L3P-ux-aSa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="              " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbZ-ff-Mr7">
+                        <rect key="frame" x="10" y="48" width="300" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JW5-XI-Ass">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.53333333329999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W2t-RD-cwl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Jv-M2-ENS"/>
+                    <constraint firstItem="vCv-ZC-0mv" firstAttribute="top" secondItem="W2t-RD-cwl" secondAttribute="bottom" constant="8" id="EMC-lw-NNi"/>
+                    <constraint firstItem="JW5-XI-Ass" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Myx-bY-DFR"/>
+                    <constraint firstAttribute="trailing" secondItem="VbZ-ff-Mr7" secondAttribute="trailing" constant="10" id="QEL-ls-2jO"/>
+                    <constraint firstItem="vCv-ZC-0mv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bOp-FH-jrP"/>
+                    <constraint firstItem="W2t-RD-cwl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="evc-Sg-FNq"/>
+                    <constraint firstItem="JW5-XI-Ass" firstAttribute="top" secondItem="VbZ-ff-Mr7" secondAttribute="bottom" constant="10" id="jiw-Ic-N4V"/>
+                    <constraint firstAttribute="trailing" secondItem="JW5-XI-Ass" secondAttribute="trailing" constant="10" id="m5K-Ta-1yE"/>
+                    <constraint firstItem="VbZ-ff-Mr7" firstAttribute="top" secondItem="vCv-ZC-0mv" secondAttribute="bottom" constant="8" id="rAn-Ag-Bqj"/>
+                    <constraint firstAttribute="trailing" secondItem="vCv-ZC-0mv" secondAttribute="trailing" constant="10" id="w8n-kJ-eNi"/>
+                    <constraint firstItem="VbZ-ff-Mr7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yaC-Sa-63c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsMessage" destination="W2t-RD-cwl" id="hjj-79-e7w"/>
+                <outlet property="pDescLabel" destination="VbZ-ff-Mr7" id="Bn3-LA-u6y"/>
+                <outlet property="preferentialLabel" destination="JW5-XI-Ass" id="uxW-gw-ycJ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="129"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_dotted_line" width="294" height="1"/>
+    </resources>
+</document>

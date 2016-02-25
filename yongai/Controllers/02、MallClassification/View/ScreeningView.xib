@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-aX-dCg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYf-gR-GeP" userLabel="cell 1 View">
+                    <rect key="frame" x="8" y="10" width="304" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd6-te-JCh">
+                            <rect key="frame" x="0.0" y="0.0" width="94" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="NtK-6G-x15"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="男用" backgroundImage="common_button_bg_circle_blue">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6w5-c9-wnH">
+                            <rect key="frame" x="105" y="0.0" width="94" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="女用" backgroundImage="common_button_background_blank">
+                                <color key="titleColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-7G-JUi">
+                            <rect key="frame" x="210" y="0.0" width="94" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="按摩棒" backgroundImage="common_button_background_blank">
+                                <color key="titleColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="height" secondItem="pd6-te-JCh" secondAttribute="height" id="1dW-m6-tNf"/>
+                        <constraint firstAttribute="trailing" secondItem="Msq-7G-JUi" secondAttribute="trailing" id="5bc-k2-qtM"/>
+                        <constraint firstItem="pd6-te-JCh" firstAttribute="leading" secondItem="EYf-gR-GeP" secondAttribute="leading" id="7U0-9M-5wS"/>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="width" secondItem="pd6-te-JCh" secondAttribute="width" id="DsU-U2-jOy"/>
+                        <constraint firstAttribute="height" constant="40" id="LqE-2w-ecc"/>
+                        <constraint firstItem="pd6-te-JCh" firstAttribute="top" secondItem="EYf-gR-GeP" secondAttribute="top" id="MF5-am-Qyy"/>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="height" secondItem="6w5-c9-wnH" secondAttribute="height" id="QmM-g0-zS0"/>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="leading" secondItem="6w5-c9-wnH" secondAttribute="trailing" constant="11" id="SWE-pu-Ogz"/>
+                        <constraint firstItem="6w5-c9-wnH" firstAttribute="leading" secondItem="pd6-te-JCh" secondAttribute="trailing" constant="11" id="Sgw-rG-8fm"/>
+                        <constraint firstItem="6w5-c9-wnH" firstAttribute="leading" secondItem="pd6-te-JCh" secondAttribute="trailing" constant="11" id="TfW-NP-raI"/>
+                        <constraint firstItem="6w5-c9-wnH" firstAttribute="top" secondItem="EYf-gR-GeP" secondAttribute="top" id="bPo-Py-h7D"/>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="width" secondItem="6w5-c9-wnH" secondAttribute="width" id="umV-2E-XIM"/>
+                        <constraint firstItem="Msq-7G-JUi" firstAttribute="top" secondItem="EYf-gR-GeP" secondAttribute="top" id="wjV-yn-JDa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EYf-gR-GeP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="2oK-Zo-GhW"/>
+                <constraint firstAttribute="trailing" secondItem="EYf-gR-GeP" secondAttribute="trailing" constant="8" id="N79-be-4qu"/>
+                <constraint firstAttribute="trailing" secondItem="mVd-aX-dCg" secondAttribute="trailing" id="awl-eO-vdN"/>
+                <constraint firstAttribute="bottom" secondItem="mVd-aX-dCg" secondAttribute="bottom" id="f4F-de-T3M"/>
+                <constraint firstItem="mVd-aX-dCg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fwT-UC-DLD"/>
+                <constraint firstItem="mVd-aX-dCg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jAu-2e-pSg"/>
+                <constraint firstItem="EYf-gR-GeP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="zPr-cm-MU0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_button_background_blank" width="222" height="87"/>
+        <image name="common_button_bg_circle_blue" width="107" height="40"/>
+    </resources>
+</document>

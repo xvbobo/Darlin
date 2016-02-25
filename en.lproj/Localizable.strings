@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Yongai
+
+  Created by myqu on 14/12/24.
+  Copyright (c) 2014年 com.threeti.yongai. All rights reserved.
+*/
+
+"Release to refresh..." = "Release to refresh...";
+"Pull to refresh..." = "Pull to refresh...";
+"Loading..." = "Loading...";
+
+
+"Release to load more..." = "Release to load more...";
+"Pull up to load more..." = "Pull up to load more...";

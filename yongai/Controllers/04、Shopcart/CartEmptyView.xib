@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CartEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_empty" translatesAutoresizingMaskIntoConstraints="NO" id="myw-7Q-TO4">
+                    <rect key="frame" x="75" y="54" width="170" height="170"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="Pcs-RA-yTe"/>
+                        <constraint firstAttribute="height" constant="170" id="Tpw-9o-kXk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车还是空的,快去逛一逛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCC-PX-c5B">
+                    <rect key="frame" x="56" y="247" width="209" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="209" id="68o-w1-ksP"/>
+                        <constraint firstAttribute="height" constant="21" id="fue-Xj-Obn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap3-Fb-gOX">
+                    <rect key="frame" x="75" y="290" width="170" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="qi7-ke-YHU"/>
+                        <constraint firstAttribute="height" constant="35" id="wFD-TL-tP6"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doGotoMallToBuy:" destination="iN0-l3-epB" eventType="touchUpInside" id="rZc-CW-28C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="myw-7Q-TO4" secondAttribute="centerX" id="2gf-Tb-w5c"/>
+                <constraint firstItem="myw-7Q-TO4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="54" id="U8f-Ec-bfk"/>
+                <constraint firstItem="rCC-PX-c5B" firstAttribute="top" secondItem="myw-7Q-TO4" secondAttribute="bottom" constant="23" id="XIb-r5-fYK"/>
+                <constraint firstItem="ap3-Fb-gOX" firstAttribute="top" secondItem="rCC-PX-c5B" secondAttribute="bottom" constant="22" id="fsJ-TU-02Z"/>
+                <constraint firstAttribute="centerX" secondItem="rCC-PX-c5B" secondAttribute="centerX" id="prB-Ia-AoE"/>
+                <constraint firstAttribute="centerX" secondItem="ap3-Fb-gOX" secondAttribute="centerX" id="sED-z2-Fhp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carBtn" destination="ap3-Fb-gOX" id="X9n-tA-TZF"/>
+                <outlet property="titleLabel" destination="rCC-PX-c5B" id="erq-r1-7i0"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="257"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart_empty" width="170" height="170"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

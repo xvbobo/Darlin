@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  yongai
+
+  Created by myqu on 15/1/21.
+  Copyright (c) 2015年 com.threeti.yongai. All rights reserved.
+*/
+"Release to refresh..." = "释放刷新...";
+"Pull to refresh..." = "下拉加载...";
+"Loading..." = "正在更新...";
+
+
+"Release to load more..." = "释放加载更多...";
+"Pull up to load more..." = "上拉加载更多";
+
+"Last Updated" = "最后更新";
+"Today" = "今天";
+"Yesterday" = "昨天";
+"The day before yesterday" = "前天";

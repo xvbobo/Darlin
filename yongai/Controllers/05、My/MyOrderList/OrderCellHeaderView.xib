@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderCellHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单金额: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQJ-8n-kvp">
+                    <rect key="frame" x="10" y="29" width="70" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SRN-8D-gOf"/>
+                        <constraint firstAttribute="width" constant="70" id="mKJ-iz-e5w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="common_line" translatesAutoresizingMaskIntoConstraints="NO" id="4N8-EV-t5I">
+                    <rect key="frame" x="0.0" y="-6" width="362" height="1"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号: 1898888888888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-9b-ayw">
+                    <rect key="frame" x="10" y="9" width="239" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ZBT-u3-81m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥29999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTn-g7-hCI">
+                    <rect key="frame" x="80" y="29" width="230" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="qgZ-6d-xEn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.53333333329999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下单时间: 2014-08-08 22:22:22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEr-DO-4S5">
+                    <rect key="frame" x="10" y="49" width="300" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="6NG-Bt-O2x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsJ-N8-DAL">
+                    <rect key="frame" x="0.0" y="-6" width="320" height="5"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="ueP-gA-A3c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OQJ-8n-kvp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3VL-3m-ygj"/>
+                <constraint firstItem="bsJ-N8-DAL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-6" id="6bm-pE-Pkk"/>
+                <constraint firstItem="bsJ-N8-DAL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BQg-XJ-LVV"/>
+                <constraint firstAttribute="trailing" secondItem="gTn-g7-hCI" secondAttribute="trailing" constant="10" id="Ns7-Zb-ean"/>
+                <constraint firstAttribute="trailing" secondItem="zrf-9b-ayw" secondAttribute="trailing" constant="71" id="SWr-3i-7pn"/>
+                <constraint firstItem="gTn-g7-hCI" firstAttribute="leading" secondItem="OQJ-8n-kvp" secondAttribute="trailing" id="Swf-wW-ll6"/>
+                <constraint firstItem="zrf-9b-ayw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="bvu-85-HGq"/>
+                <constraint firstAttribute="trailing" secondItem="bsJ-N8-DAL" secondAttribute="trailing" id="esV-cB-aLi"/>
+                <constraint firstItem="zrf-9b-ayw" firstAttribute="top" secondItem="bsJ-N8-DAL" secondAttribute="bottom" constant="10" id="ibr-zq-Zwd"/>
+                <constraint firstAttribute="trailing" secondItem="kEr-DO-4S5" secondAttribute="trailing" constant="10" id="ls3-1i-OLS"/>
+                <constraint firstItem="kEr-DO-4S5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="p3C-6z-ceQ"/>
+                <constraint firstItem="OQJ-8n-kvp" firstAttribute="top" secondItem="zrf-9b-ayw" secondAttribute="bottom" id="pMh-t8-8zB"/>
+                <constraint firstItem="kEr-DO-4S5" firstAttribute="top" secondItem="gTn-g7-hCI" secondAttribute="bottom" id="s18-Au-H4f"/>
+                <constraint firstItem="gTn-g7-hCI" firstAttribute="top" secondItem="zrf-9b-ayw" secondAttribute="bottom" id="v8g-7m-QOZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dingDanMoney" destination="OQJ-8n-kvp" id="5Fe-Mv-uR1"/>
+                <outlet property="orderDateLabel" destination="kEr-DO-4S5" id="oVP-Ni-cGm"/>
+                <outlet property="orderNoLabel" destination="zrf-9b-ayw" id="Kp0-7O-DHd"/>
+                <outlet property="orderPriceLabel" destination="gTn-g7-hCI" id="ftH-4j-aKB"/>
+                <outlet property="view1" destination="bsJ-N8-DAL" id="MfA-4C-K6U"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="344.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_line" width="362" height="1"/>
+    </resources>
+</document>

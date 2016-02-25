@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AB4691A5-FA28-4D8E-A52A-2386E47C64F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>yongai</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1463cf9c-f97e-584b-9724-8e9b5c7927cb</key>
+		<string>http://101.230.8.67:9000/svn/yongai</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/iphone/Yongai2015/yongai.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1463cf9c-f97e-584b-9724-8e9b5c7927cb</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1463cf9c-f97e-584b-9724-8e9b5c7927cb</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1463cf9c-f97e-584b-9724-8e9b5c7927cb</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yongai</string>
+		</dict>
+	</array>
+</dict>
+</plist>

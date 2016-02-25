@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="zD2-PM-99f" customClass="OderNoteCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zD2-PM-99f" id="Z4b-Dq-wKe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-8A-xIE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="gCB-9K-mnc"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oder_line" translatesAutoresizingMaskIntoConstraints="NO" id="SIE-Jj-eqy">
+                        <rect key="frame" x="13" y="47" width="308" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="w62-0W-yI9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单备注:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDS-0O-mUc">
+                        <rect key="frame" x="13" y="18" width="71" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="71" id="aM5-bB-L0J"/>
+                            <constraint firstAttribute="height" constant="21" id="gnT-7Z-aoo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-8R-ZCt" customClass="TTITextView">
+                        <rect key="frame" x="13" y="48" width="294" height="49"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="IMW-2c-nRl"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Teg-8R-ZCt" secondAttribute="trailing" constant="13" id="1Y4-Hf-neU"/>
+                    <constraint firstItem="Teg-8R-ZCt" firstAttribute="leading" secondItem="Z4b-Dq-wKe" secondAttribute="leading" constant="13" id="1ty-Ap-5eP"/>
+                    <constraint firstItem="SIE-Jj-eqy" firstAttribute="leading" secondItem="Z4b-Dq-wKe" secondAttribute="leading" constant="13" id="2ew-7x-m1O"/>
+                    <constraint firstItem="8jL-8A-xIE" firstAttribute="leading" secondItem="Z4b-Dq-wKe" secondAttribute="leading" id="7fO-JO-gDI"/>
+                    <constraint firstItem="Teg-8R-ZCt" firstAttribute="top" secondItem="SIE-Jj-eqy" secondAttribute="bottom" id="9lK-yE-M56"/>
+                    <constraint firstItem="8jL-8A-xIE" firstAttribute="top" secondItem="Z4b-Dq-wKe" secondAttribute="top" id="IMd-fV-Fef"/>
+                    <constraint firstItem="RDS-0O-mUc" firstAttribute="top" secondItem="8jL-8A-xIE" secondAttribute="bottom" constant="8" id="L6J-Fr-XXF"/>
+                    <constraint firstItem="RDS-0O-mUc" firstAttribute="leading" secondItem="Z4b-Dq-wKe" secondAttribute="leading" constant="13" id="NeZ-Uc-7bi"/>
+                    <constraint firstAttribute="trailing" secondItem="SIE-Jj-eqy" secondAttribute="trailing" constant="-1" id="aIV-B1-BgU"/>
+                    <constraint firstAttribute="trailing" secondItem="8jL-8A-xIE" secondAttribute="trailing" id="efA-0O-RTR"/>
+                    <constraint firstItem="SIE-Jj-eqy" firstAttribute="top" secondItem="RDS-0O-mUc" secondAttribute="bottom" constant="8" id="n7G-T0-ZVO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dingDanBei" destination="RDS-0O-mUc" id="fSW-Op-MNQ"/>
+                <outlet property="noteMarginView" destination="8jL-8A-xIE" id="SGA-GY-6rc"/>
+                <outlet property="noteTextView" destination="Teg-8R-ZCt" id="05r-Yz-GJt"/>
+                <outlet property="order_line" destination="SIE-Jj-eqy" id="fQO-Vj-xnk"/>
+                <outlet property="order_lineH" destination="w62-0W-yI9" id="fiv-Tf-2BP"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="233"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="oder_line" width="294" height="1"/>
+    </resources>
+</document>

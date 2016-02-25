@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ServiceView" id="iN0-l3-epB" customClass="ServiceView">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ne-Lf-o87">
+                    <rect key="frame" x="10" y="109" width="136" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="GHC-5O-1dx"/>
+                        <constraint firstAttribute="width" constant="136" id="a84-4K-aOP"/>
+                    </constraints>
+                    <state key="normal" image="common_button_cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ4-Hj-iES">
+                    <rect key="frame" x="148" y="109" width="136" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="1Yi-BA-hcu"/>
+                        <constraint firstAttribute="width" constant="136" id="S5Z-Ht-CWu"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服热线" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8R-eZ-AKb">
+                    <rect key="frame" x="104" y="20" width="87" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KI8-LW-G6s"/>
+                        <constraint firstAttribute="width" constant="87" id="Qua-ki-L79"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400-800-0021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3S9-dC-oCe">
+                    <rect key="frame" x="77" y="51" width="140" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6xb-Ou-Rzg"/>
+                        <constraint firstAttribute="width" constant="140" id="xzG-cu-wX4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（周一至周日9:00到18:00）" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBl-hA-sdn">
+                    <rect key="frame" x="42" y="77" width="210" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="0a1-zO-ZKy"/>
+                        <constraint firstAttribute="height" constant="21" id="eT3-96-Tb1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="E8R-eZ-AKb" secondAttribute="centerX" id="3AX-h6-fbM"/>
+                <constraint firstItem="3ne-Lf-o87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="8oz-G2-oYb"/>
+                <constraint firstItem="3S9-dC-oCe" firstAttribute="top" secondItem="E8R-eZ-AKb" secondAttribute="bottom" constant="10" id="DWO-Xb-kqe"/>
+                <constraint firstItem="jZ4-Hj-iES" firstAttribute="top" secondItem="aBl-hA-sdn" secondAttribute="bottom" constant="11" id="E7N-sU-hqq"/>
+                <constraint firstItem="jZ4-Hj-iES" firstAttribute="leading" secondItem="3ne-Lf-o87" secondAttribute="trailing" constant="2" id="GCH-IG-3kt"/>
+                <constraint firstAttribute="centerX" secondItem="aBl-hA-sdn" secondAttribute="centerX" id="OGh-35-ivQ"/>
+                <constraint firstItem="3ne-Lf-o87" firstAttribute="top" secondItem="aBl-hA-sdn" secondAttribute="bottom" constant="11" id="Osq-yp-tuN"/>
+                <constraint firstItem="aBl-hA-sdn" firstAttribute="top" secondItem="3S9-dC-oCe" secondAttribute="bottom" constant="5" id="SHD-bM-30P"/>
+                <constraint firstItem="E8R-eZ-AKb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="dWy-tl-jQ0"/>
+                <constraint firstAttribute="centerX" secondItem="3S9-dC-oCe" secondAttribute="centerX" id="tbF-ji-w2A"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="3ne-Lf-o87" id="RbJ-uV-veN"/>
+                <outlet property="sureButton" destination="jZ4-Hj-iES" id="mgh-Ep-mgg"/>
+            </connections>
+            <point key="canvasLocation" x="469" y="322.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_button_cancel" width="150" height="39"/>
+    </resources>
+</document>
